@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:windowSoftInputMode="stateAlwaysVisible|adjustPan"
+    android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:id="@+id/sjlive_act_ll_menssage"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+
+                android:paddingTop="10dp">
+
+
+                <EditText
+                    android:id="@+id/sjlive_act_et_message"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/sjlive_et_banck_message"
+                    android:gravity="center_vertical"
+                    android:hint="asd"
+                    android:lines="1"
+                    android:padding="5dp"
+
+                    android:textSize="25sp" />
+
+
+                <ImageView
+
+                    android:id="@+id/sjlive_act_iv_xiaolian"
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/input_icon_expression" />
+
+
+                <ImageView
+                    android:id="@+id/sjlive_act_iv_enter"
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:onClick="onClick"
+                    android:src="@mipmap/enters" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/sjlive_act_v_menssage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/sjlive_act_ll_menssage"
+                android:alpha="0"
+                android:onClick="onClick" />
+
+</RelativeLayout>

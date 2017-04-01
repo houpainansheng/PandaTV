@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+  <RelativeLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="40dp">
+     <android.support.design.widget.TabLayout
+         android:id="@+id/shouye_frag_tab"
+         android:layout_width="200dp"
+         android:layout_height="40dp"
+         app:tabSelectedTextColor="@color/colorDiBu"
+         app:tabIndicatorHeight="3sp"
+         app:tabIndicatorColor="@color/colorDiBu"
+         android:layout_centerHorizontal="true"
+         />
+     <ImageView
+         android:id="@+id/shouye_frag_image_search"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+      android:background="@drawable/shouye_icon_search"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="20dp"
+         />
+
+
+  </RelativeLayout>
+   <android.support.v4.view.ViewPager
+       android:id="@+id/shouye_frag_viewPager"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       />
+</LinearLayout>

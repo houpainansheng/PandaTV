@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RadioGroup
+        android:background="@drawable/frag_paihang_paihang_rg"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="280dp"
+        android:layout_height="30dp">
+        <RadioButton
+            android:textSize="20sp"
+
+            android:gravity="center"
+            android:text="周排行"
+            android:textColor="@drawable/sp_paihang_chebox_text_clolor"
+            android:id="@+id/rb_1"
+            android:button="@null"
+            android:checked="true"
+            android:background="@drawable/sp_paihang_chebox_clolor"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="总排行"
+            android:textColor="@drawable/sp_paihang_chebox_text_clolor"
+
+            android:id="@+id/rb_2"
+            android:background="@drawable/sp_paihang_chebox_clolor_r"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+    </RadioGroup>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/paihan_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+
+</LinearLayout>

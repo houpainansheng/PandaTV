@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sjlive"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    tools:context="com.qianf.ly.pandatv.ui.sjLive.SJLiveActivity">
+
+
+
+
+
+    <io.vov.vitamio.widget.VideoView
+        android:id="@+id/sjlive_act_vv_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <com.qianf.ly.pandatv.ui.sjLive.animator.HeartLayout
+            android:id="@+id/sjlive_act_heart_layout"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="60dp"
+
+            />
+
+       <include
+           layout="@layout/activity_sjlive_gift_bottom"
+           />
+
+        <include
+            layout="@layout/activity_sjlive_chat"
+            />
+
+        <include
+            android:visibility="gone"
+            android:id="@+id/sjlive_act_incl_message"
+            layout="@layout/activity_sjlive_message"
+            />
+        <include
+            android:visibility="gone"
+            android:id="@+id/sjlive_act_incl_gift"
+            layout="@layout/activity_sjlive_gift"
+            />
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

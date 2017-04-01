@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="60dp">
+         <TextView
+             android:id="@+id/frag_tuijian_item_title"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="热门"
+             android:textSize="15sp"
+             android:textStyle="bold"
+             android:layout_centerInParent="true"/>
+
+     </RelativeLayout>
+    <com.qianf.ly.pandatv.ui.main.fragment.game.model.GridViewForListView
+
+        android:id="@+id/frag_tuijian_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"/>
+    <Button
+        android:id="@+id/frag_tuijian_item_more"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorWhite"
+        android:text="haiyou"
+        android:textSize="12sp"
+        android:onClick="onClick"
+        android:textColor="@color/colorDiBu"
+
+        />
+
+</LinearLayout>

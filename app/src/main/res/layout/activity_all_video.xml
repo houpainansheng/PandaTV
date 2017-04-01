@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_all_video"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qianf.ly.pandatv.ui.main.activity.AllVideoActivity"
+  android:padding="10dp" >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:layout_height="30dp">
+       <Button
+           android:id="@+id/activity_all_video_image"
+           android:layout_width="25dp"
+           android:layout_height="25dp"
+           android:background="@drawable/ico_return_selector"
+           />
+       <TextView
+           android:id="@+id/activity_all_video_title"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="标题"
+           android:textSize="18sp"
+           android:gravity="center_horizontal"
+           />
+   </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_all_video_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridView
+            android:id="@+id/activity_all_video_list"
+            android:layout_width="match_parent"
+            android:numColumns="2"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

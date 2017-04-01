@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qianf.ly.pandatv.ui.main.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_frame_layout_jiemian"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+
+    <RadioGroup
+        android:id="@+id/main_radio_group_dibu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_radio_btn_shouye"
+            style="@style/RadioButton"
+            android:checked="true"
+            android:drawableTop="@drawable/radio_btn_home_pic"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/main_radio_btn_game"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/radio_btn_geme_pic"
+            android:text="游戏" />
+
+        <RadioButton
+            android:id="@+id/main_radio_btn_yule"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/radio_btn_yule_pic"
+            android:text="娱乐" />
+
+        <RadioButton
+            android:id="@+id/main_radio_btn_my"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/radio_btn_yuyue_pic"
+            android:text="我的" />
+
+    </RadioGroup>
+</LinearLayout>

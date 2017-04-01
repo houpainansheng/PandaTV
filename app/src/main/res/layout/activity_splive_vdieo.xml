@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#99000000">
+
+        <ImageView
+
+            android:id="@+id/vedio_back"
+
+            android:padding="5dp"
+            android:onClick="onClick"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/back" />
+
+        <ImageView
+
+            android:onClick="onClick"
+            android:id="@+id/vedio_setting"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/setting" />
+
+        <CheckBox
+
+            android:id="@+id/vedio_danmu"
+            android:onClick="onClick"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/vedio_setting"
+            android:background="@drawable/danmu_selector"
+            android:button="@null" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="#99000000">
+
+        <CheckBox
+
+            android:checked="true"
+            android:layout_margin="5dp"
+            android:button="@null"
+            android:onClick="onClick"
+            android:id="@+id/vedio_player"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/play_bottn_selector" />
+
+        <CheckBox
+
+            android:layout_margin="5dp"
+            android:button="@null"
+            android:onClick="onClick"
+            android:id="@+id/vedio_qiehuang"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/screen_selector" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/vedio_llayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/vedio_qiehuang"
+            android:layout_toRightOf="@+id/vedio_player">
+
+            <EditText
+
+                android:id="@+id/vedio_shuru"
+                android:layout_width="0dp"
+                android:textColor="@color/colorWhite"
+                android:layout_height="match_parent"
+                android:layout_weight="6.5" />
+
+            <ImageView
+                android:onClick="onClick"
+                android:id="@+id/vedio_enter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/ic_launcher" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
